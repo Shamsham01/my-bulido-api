@@ -1,9 +1,7 @@
 import { Router } from 'express';
-import { issueFungibleToken } from '../controllers/ftController';
+import { issueFungibleToken } from '../controllers/ftController.js';
 
 const router = Router();
-
-// POST /fungible/issue - endpoint for issuing a fungible token
 router.post('/issue', issueFungibleToken);
 
 export default router;
